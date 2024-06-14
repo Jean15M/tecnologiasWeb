@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+
+        <ui:composition template="./base.xhtml">
+            
+            <ui:define name="top">
+                <img src="#{request.contextPath}/resources/images/logoista.png" style="height: 100px; margin: 0px 0px 10px 0px;" alt="Logo de la empresa"/>
+            </ui:define>
+
+            <ui:define name="left">
+                <iframe src="index.xhtml" height="400px" width="150px"></iframe>
+            </ui:define>
+
+            <ui:define name="right">
+                <h1>LINKS DE ACCESO</h1>
+                <h:outputLink value="https://www.tecazuay.edu.ec/">
+                    Visitar tecazuay.com
+                </h:outputLink>
+            </ui:define>
+                
+            <ui:define name="content">
+                <iframe name="prin1" height="400px" width="900px"/>s
+            </ui:define>
+
+            <ui:define name="bottom">
+                <img src="#{request.contextPath}/resources/images/logoista.png" style="height: 90px; margin: 10px 0px 0px 0px;" alt="Logo de la empresa"/>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
